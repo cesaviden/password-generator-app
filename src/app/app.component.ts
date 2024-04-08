@@ -26,7 +26,9 @@ export class AppComponent {
     const numbers = '0123456789';
     const letters = 'abcdefghijklmnopqrstuvwxyz';
     const symbols = '!@#$%^&*()';
+
     let validChars = '';
+    
     if (this.letters) {
       validChars += letters;
     }
@@ -45,6 +47,7 @@ export class AppComponent {
       const index = Math.floor(Math.random() * validChars.length);
       generatedPassword += validChars[index];
     }
+
     if (!this.letters && !this.numbers && !this.symbols) {
       alert('Please select at least one character type');
       this.password = '';
