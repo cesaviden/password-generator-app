@@ -1,0 +1,57 @@
+/* src\styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  fieldset {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="range"] {
+    width: 300px;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #0066cc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background-color: #005599;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px auto;
+  }
+  
+  
+  

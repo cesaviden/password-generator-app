@@ -1,52 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Generator App</title>
-  </head>
-  <body>
-    <h1>Angular Password Generator</h1>
-    <fieldset>
-      <legend>{{ title }}</legend>
-      <label for="length">How long should your password be? : </label>
-      <input
-        type="range"
-        [value]="length"
-        name="length"
-        min="7"
-        max="20"
-        (input)="onInputChange($event)"
-      />
-      <p for="length">Length of password: {{ length }}</p>
+<!-- src\app\app.component.html -->
+<h1>Angular Password Generator</h1>
+<fieldset>
+  <legend>{{ title }}</legend>
+  <label for="length">How long should your password be? : </label>
+  <input
+    type="range"
+    [value]="length"
+    name="length"
+    min="7"
+    max="20"
+    (input)="onInputChange($event)"
+  />
+  <p for="length">Length of password: {{ length }}</p>
 
-      <input
-        type="checkbox"
-        id="includeNumbers"
-        name="includeNumbers"
-        [(ngModel)]="numbers"
-      />
-      <label for="includeNumbers">Include Numbers? </label>
-      <br />
-      <input
-        type="checkbox"
-        id="includeSymbols"
-        name="includeSymbols"
-        [(ngModel)]="symbols"
-      />
-      <label for="includeSymbols">Include Symbols? </label>
-      <br />
-      <input
-        type="checkbox"
-        id="includeLetters"
-        name="includeLetters"
-        [(ngModel)]="letters"
-      />
-      <label for="includeLetters">Include Letters? </label>
-      <br />
-      <button (click)="onButtonClick()">Generate Password</button>
-      <p>{{ password }}</p>
-
-    </fieldset>
-  </body>
-</html>
+  <input
+    type="checkbox"
+    id="includeNumbers"
+    name="includeNumbers"
+    [(ngModel)]="numbers"
+  />
+  <label for="includeNumbers">Include Numbers? </label>
+  <br />
+  <input
+    type="checkbox"
+    id="includeSymbols"
+    name="includeSymbols"
+    [(ngModel)]="symbols"
+  />
+  <label for="includeSymbols">Include Symbols? </label>
+  <br />
+  <input
+    type="checkbox"
+    id="includeLetters"
+    name="includeLetters"
+    [(ngModel)]="letters"
+  />
+  <label for="includeLetters">Include Letters? </label>
+  <br />
+  <button (click)="onButtonClick()">Generate Password</button>
+  <p>{{ password }}</p>
+</fieldset>
